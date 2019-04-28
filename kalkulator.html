@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>kalkulator</title>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <link rel="stylesheet" href="./src/css/kalkulator.css">
+    <h2>program kalkulator</h2>
+    <p>masukkan angka =</p>
+    <label for="">Angka 1 :</label>
+    <input type="text" id="angka1">
+    <br>
+    <label for="">Angka 2 :</label>
+    <input type="text" id="angka2">
+    <label for="">hasil</label>
+    <input type="text"  id="hasil" />
+    <br>
+    <button onclick="ftambah()">+</button>
+    <button onclick="fkurang()">-</button>
+    <button onclick="fkali()">X</button>
+    <button onclick="fbagi()">:</button>
+   
+</body>
+
+<script>
+        var angka1 = document.getElementById("angka1");
+        var angka2 = document.getElementById("angka2");
+        var hasil = document.getElementById("hasil");
+        alert(parseInt(a1) - parseInt(a2));
+    
+        function fkurang() {
+            hasil.value = Number(angka1.value) - Number(angka2.value);
+    
+        }
+    
+        function ftambah() {
+            hasil.value = Number(angka1.value) + Number(angka2.value);
+            alert(parseInt(a1) - parseInt(a2));
+    
+        }
+        function fkali(){
+            hasil.value = Number(angka1.value) * Number(angka2.value);
+            alert(parseInt(a1) * parseInt(a2));
+        }
+        function fbagi(){
+            hasil.value = Number(angka1.value) / Number(angka2.value);
+            alert(parseInt(a2)/parseInt(a2));
+        }
+    </script>
+</html>
